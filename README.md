@@ -11,22 +11,22 @@ Scripts are currently written in-game in C#, but any .NET language should be sup
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=bSjWUueKhPE" target="_blank"><img src="http://img.youtube.com/vi/bSjWUueKhPE/0.jpg" 
 alt="Features Demo" width="240" height="180" border="10" /></a>
-> <sub>*Features Demo*</sub>
+> <sup>*Features Demo*</sup>
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=LjG5SWcGVtc" target="_blank"><img src="http://img.youtube.com/vi/LjG5SWcGVtc/0.jpg" 
 alt="Extensibility Demo" width="240" height="180" border="10" /></a>
-> <sub>*Extensibility Demo*</sub>
+> <sup>*Extensibility Demo*</sup>
 
 ### Screens ###
 
 ![MainGame](http://mcsyko.github.io/Images/DumbBots/main_game.png)
-> <sub>*Default death-match mode - fight in Quake III style arena*</sub>
+> <sup>*Default death-match mode - fight in Quake III style arena*</sup>
 
 ![CustomGame](http://mcsyko.github.io/Images/DumbBots/zombie_blaster.png)
-> <sub>*Zombie Blaster demo - example of the "Director" AI adding extra enemies to the game and altering some dynamics of gameplay*</sub>
+> <sup>*Zombie Blaster demo - example of the "Director" AI adding extra enemies to the game and altering some dynamics of gameplay*</sup>
 
 ![BasicCoder](http://mcsyko.github.io/Images/DumbBots/basic_coder.png)
-> <sub>*Basic coder to introduce non-programmers to some basic programming concepts*</sub>
+> <sup>*Basic coder to introduce non-programmers to some basic programming concepts*</sup>
 
 ### Features ###
 * Program scripts while game is in play to immediately view results
