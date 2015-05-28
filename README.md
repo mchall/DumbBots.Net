@@ -19,6 +19,8 @@ alt="Extensibility Demo" width="240" height="180" border="10" /></a>
 
 ### Screens ###
 
+{% include figure.html src="http://mcsyko.github.io/Images/DumbBots/main_game.png" caption="Default death-match mode - fight in Quake III style arena" %}
+
 ![MainGame](http://mcsyko.github.io/Images/DumbBots/main_game.png)
 > <sub>*Default death-match mode - fight in Quake III style arena*</sub>
 
