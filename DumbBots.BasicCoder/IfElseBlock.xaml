@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="DumbBots.BasicCoder.IfElseBlock"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DumbBots.BasicCoder">
+    <StackPanel Margin="5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="imgDelete" Grid.Row="0" Grid.ColumnSpan="2" Source="Resources/Symbols-Delete-icon.png" Width="20" HorizontalAlignment="Right"
+                   MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonDown="Image_MouseLeftButtonDown" />
+
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="IF" VerticalAlignment="Center" FontWeight="Bold" FontSize="14" />
+            <local:ConditionBlock x:Name="IfCondition" Grid.Row="1" Grid.Column="1"  />
+
+            <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Text="THEN" FontWeight="Bold" FontSize="14" />
+            <local:StatementBlock x:Name="IfStatement" Grid.Row="3" Grid.Column="1"/>
+            <TextBlock Grid.Row="4" Grid.ColumnSpan="2" Text="ELSE" FontWeight="Bold" FontSize="14" />
+            <local:StatementBlock x:Name="ElseStatement" Grid.Row="5" Grid.Column="1" />
+        </Grid>
+    </StackPanel>
+</UserControl>

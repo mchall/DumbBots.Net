@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSerializationObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Statements>
+    <anyType xsi:type="IfElseSerializationObject">
+      <Condition>
+        <LeftCommand xsi:type="GetEnemySightedCommand" />
+        <Operator>Equal</Operator>
+        <RightCommand xsi:type="FalseCommand" />
+      </Condition>
+      <IfStatements>
+        <anyType xsi:type="IfElseSerializationObject">
+          <Condition>
+            <LeftCommand xsi:type="GetHealthCommand" />
+            <Operator>LessThan</Operator>
+            <RightCommand xsi:type="MaxHealthCommand" />
+          </Condition>
+          <IfStatements>
+            <anyType xsi:type="GetNearestMedkitCommand" />
+          </IfStatements>
+          <ElseStatements>
+            <anyType xsi:type="IfElseSerializationObject">
+              <Condition>
+                <LeftCommand xsi:type="GetAmmoCommand" />
+                <Operator>LessThan</Operator>
+                <RightCommand xsi:type="MaxAmmoCommand" />
+              </Condition>
+              <IfStatements>
+                <anyType xsi:type="GetNearestBazookaCommand" />
+              </IfStatements>
+              <ElseStatements>
+                <anyType xsi:type="MoveRandomCommand" />
+              </ElseStatements>
+            </anyType>
+          </ElseStatements>
+        </anyType>
+      </IfStatements>
+      <ElseStatements>
+        <anyType xsi:type="IfElseSerializationObject">
+          <Condition>
+            <LeftCommand xsi:type="GetHealthCommand" />
+            <Operator>LessThan</Operator>
+            <RightCommand xsi:type="ManualNumberCommand">
+              <Value>40</Value>
+            </RightCommand>
+          </Condition>
+          <IfStatements>
+            <anyType xsi:type="GetNearestMedkitCommand" />
+          </IfStatements>
+          <ElseStatements>
+            <anyType xsi:type="IfElseSerializationObject">
+              <Condition>
+                <LeftCommand xsi:type="GetAmmoCommand" />
+                <Operator>Equal</Operator>
+                <RightCommand xsi:type="ManualNumberCommand">
+                  <Value>0</Value>
+                </RightCommand>
+              </Condition>
+              <IfStatements>
+                <anyType xsi:type="ShootBulletCommand">
+                  <ParameterCommand xsi:type="GetEnemyPositionCommand" />
+                </anyType>
+              </IfStatements>
+              <ElseStatements>
+                <anyType xsi:type="ShootRocketCommand">
+                  <ParameterCommand xsi:type="GetEnemyPositionCommand" />
+                </anyType>
+              </ElseStatements>
+            </anyType>
+          </ElseStatements>
+        </anyType>
+      </ElseStatements>
+    </anyType>
+  </Statements>
+</CodeSerializationObject>

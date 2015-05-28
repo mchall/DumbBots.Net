@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="DumbBots.BasicCoder.CommandBlock"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             PreviewMouseLeftButtonDown="UserControl_PreviewMouseLeftButtonDown"
+             PreviewMouseMove="UserControl_PreviewMouseMove"
+             Margin="5"
+             Background="White" 
+             AllowDrop="False">
+    <Border BorderThickness="1" BorderBrush="Black">
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Image x:Name="imgReturnType" Grid.Column="0" Width="20" HorizontalAlignment="Left"/>            
+            <TextBlock x:Name="nameBlock" Grid.Column="1" Margin="2,0,0,0" Grid.ColumnSpan="2" />
+            <Image x:Name="imgDelete" Grid.Column="2" Source="Resources/Symbols-Delete-icon.png" Width="20" HorizontalAlignment="Right"
+                   MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonDown="Image_MouseLeftButtonDown" />
+        </Grid>
+    </Border>
+</UserControl>

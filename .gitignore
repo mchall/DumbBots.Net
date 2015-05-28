@@ -1,0 +1,12 @@
+
+*.suo
+/DumbBots.NET/bin
+/DumbBots.NET/obj
+/ScintillaNET/bin
+/MDXInfo.Util.Script/bin
+/MDXInfo.Util.Script/obj
+/ScintillaNET/ScintillaNET/obj
+/DumbBots.NETApi/obj
+/DumbBots.NETApi/bin
+/DumbBots.BasicCoder/bin
+/DumbBots.BasicCoder/obj

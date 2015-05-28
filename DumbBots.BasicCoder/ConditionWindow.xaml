@@ -1,0 +1,43 @@
+﻿<Window x:Class="DumbBots.BasicCoder.ConditionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Complete IF statement" MinWidth="400"
+        Icon="Resources/icon.ico"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="pnlCurrentCmd" Grid.Row="0" Margin="0,0,0,10" >
+            <TextBlock Text="Current command:"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <RadioButton x:Name="rbEqual" Content="Equal to (=)" IsChecked="True" />
+            <RadioButton x:Name="rbNotEqual" Content="Not equal to (!=)" />
+            <RadioButton x:Name="rbGreater" Content="Greater than (&gt;)" />
+            <RadioButton x:Name="rbLesser" Content="Less than (&lt;)" />
+        </StackPanel>
+
+        <StackPanel x:Name="commandPanel" Grid.Row="2">
+        </StackPanel>
+
+        <StackPanel x:Name="pnlManual" Grid.Row="3" Margin="0,10,0,10">
+            <TextBlock Text="Enter a value manually:" />
+            <TextBox x:Name="txtManualValue" Margin="5" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="btnOK" IsDefault="True" Content="OK" Height="25" Width="100" Margin="0,0,5,0" Click="OKButton_Click"></Button>
+            <Button Content="Cancel" IsCancel="True" Height="25" Width="100"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
