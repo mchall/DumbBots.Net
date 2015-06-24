@@ -19,13 +19,13 @@ alt="Extensibility Demo" width="240" height="180" border="10" /></a>
 
 ### Screens ###
 
-![MainGame](http://mcsyko.github.io/Images/DumbBots/main_game.png)
+![MainGame](http://mchall.github.io/Images/DumbBots/main_game.png)
 > <sup>*Default death-match mode - fight in Quake III style arena*</sup>
 
-![CustomGame](http://mcsyko.github.io/Images/DumbBots/zombie_blaster.png)
+![CustomGame](http://mchall.github.io/Images/DumbBots/zombie_blaster.png)
 > <sup>*Zombie Blaster demo - example of the "Director" AI adding extra enemies to the game and altering some dynamics of gameplay*</sup>
 
-![BasicCoder](http://mcsyko.github.io/Images/DumbBots/basic_coder.png)
+![BasicCoder](http://mchall.github.io/Images/DumbBots/basic_coder.png)
 > <sup>*Basic coder to introduce non-programmers to some basic programming concepts*</sup>
 
 ### Features ###
